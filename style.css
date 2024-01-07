@@ -1,0 +1,327 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: rgb(71, 121, 154);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    background-color: rgb(218, 175, 66);
+    color: #fff;
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;;
+}
+
+nav a:hover {
+    background-color: #555; /* Fare üzerine gelindiğinde bağlantı arka plan rengi */
+}
+
+.carousel-image {
+    height: 100px;
+    object-fit: cover; 
+
+}
+
+section {
+    padding: 1em;
+}
+
+#hero-section{
+    background-color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+#hero-section h2 {
+    color: #333; /* İstediğiniz renge göre düzenleyebilirsiniz */
+    margin-top: 0; /* h2 etiketi ile üstteki element arasındaki margin'ı sıfırlıyoruz */
+}
+
+#hero-section p{
+    margin-bottom: 30px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-around;  /* Resimleri eşit aralıklarla yerleştir */
+    flex-wrap: wrap;  /* Öğeleri satırlara böl */
+}
+
+.product-item {
+    width: 30%;  /* Öğenin genişliğini ayarla, örneğin 30% */
+    text-align: center;  /* Metinleri merkezle */
+    margin-bottom: 20px;  /* Her ürün arasında boşluk bırak */
+}
+
+.product .product-item button{
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #3498db;
+    bottom: 10px; /* Düğmenin alttan olan uzaklığını belirtin */
+    right: 20px; /* Düğmenin sağdan olan uzaklığını belirtin */
+    cursor: pointer;
+    z-index: 999; 
+   
+}
+
+.product .product-item button:hover {
+    color: #fff;
+    background-color: #3498db;
+}
+
+.product-item img {
+    max-width: 100%;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 10px;  /* Resim ile metin arasında bir boşluk bırak */
+}
+
+.product-item h3,
+.product-item p {
+    margin: 0;  /* H3 ve p'nin varsayılan marjlarını sıfırla */
+}
+
+
+
+#category-section {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1500px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#category-section h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.category-info p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify; /* Paragrafı düzgün bir şekilde hizalar */
+    margin-bottom: 10px;
+    flex: 1;
+    flex-direction: column;
+    
+}
+
+#category-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category-item {
+    display: flex;
+    width: 200%; /* Öğelerin tüm alanı kaplamasını sağlar */
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+   
+}
+
+.category-content {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+}
+
+.category-image img {
+    max-width: 300px;
+    width: 300px;
+    height: auto;
+   
+}
+
+.category-info {
+    flex: 1;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.category-info h3 {
+    color: #3498db;
+    font-size: 20px;
+}
+
+.category-info h4 {
+    color: black; /* Başlık rengi */
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    color: black;
+}
+
+.category-info p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    overflow: hidden;
+    margin-bottom: 10px;
+    max-width: 900px;
+    
+}
+
+.category-info a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #3498db;
+    
+}
+
+.category-info a:hover {
+    color: #fff;
+    background-color: #3498db;
+}
+.about-section {
+    background-color: #f9f9f9;;
+    padding: 50px; /* İstediğiniz iç boşluğu belirleyin */
+    text-align: center;
+    border-radius: 10px; /* Kenarlık köşe yuvarlatma */
+    box-shadow: 0 0 10px rgba(115, 4, 4, 0.1); /* Gölge */
+    font-size: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    color: #0d0d0d; /* Başlık rengini istediğiniz renge ayarlayın */
+    text-transform: uppercase; /* Metni büyük harfe dönüştürme */
+    font-size: 33px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.about-section p {
+    color: black; /* Paragraf rengini istediğiniz renge ayarlayın */
+    line-height: 1.6; /* Satır yüksekliği */
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#hero-section {
+    background-color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+#category-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+#category-section li {
+    margin-bottom: 0.5em;
+}
+
+#contact-section {
+    background-color:  #f9f9f9;
+    padding: 50px; /* İstediğiniz iç boşluğu belirleyin */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-section h2 {
+    color: #0c0c0c;
+    font-weight: bold;
+    font-size: 33px;
+    margin-bottom: 20px; /* Başlık ile altındaki metin arasındaki boşluğu belirleyin */
+    cursor: pointer;
+}
+
+#contact-section p {
+    color: #090909;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+#contact-section address {
+    margin-top: 20px; /* Adres bilgileri ile diğer metin arasındaki boşluğu belirleyin */
+}
+
+
+/* Responsive tasarım için tek bir media query sadece #category-section içinde */
+@media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
+        #category-section {
+            padding: 30px;
+        }
+    
+        .category-item {
+            flex-direction: column;
+            align-items: center;
+            text-align: center; /* Yazıları merkezle */
+        }
+    
+        .category-image img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .category-info h4 {
+            font-size: 24px;
+            margin-top: 10px; /* Yazı ile resim arasındaki boşluğu artırır */
+        }
+    
+        .category-info p,
+        .category-info a {
+            font-size: 14px;
+            margin: 10px 0; /* Yazılar arasındaki boşluğu artırır */
+        }
+    
+        #category-section ul {
+            padding: 0; /* Liste içi boşlukları sıfırla */
+        }
+    }
